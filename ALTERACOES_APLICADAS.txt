@@ -1,0 +1,6 @@
+Alterações aplicadas em 2026-03-10:
+- Produtos: botão Ver mais 15, cards com ícones, menu de ações sobreposto à tabela, remoção do título duplicado.
+- Categorias: upload/preview de imagem, miniatura na tabela, edição com imagem, backend multipart/json ajustado.
+- Dashboard/Pedidos/Clientes/Carteira/Configurações: remoção dos títulos duplicados.
+- Marketplace: remoção do card superior de resumo e troca de emojis por logomarcas.
+Ajustes dashboard/relatórios/marketplace aplicados em 2026-03-10

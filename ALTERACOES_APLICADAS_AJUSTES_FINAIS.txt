@@ -1,0 +1,16 @@
+Ajustes aplicados nesta versão:
+- Scroll para o topo ao trocar de página/aba
+- Topbar: nome/subdomínio da loja clicável levando para a loja
+- Configurações: subdomínio editável, persistência do nome/descrição/subdomínio no usuário salvo localmente
+- Pedidos: exportar CSV, criar pedido manual com cliente/itens/pagamento/canal, abertura do pedido vinda do dashboard
+- Clientes: filtro de status e modal de novo cliente
+- Produtos: exportar CSV real e importar CSV para criar produtos
+- Carteira: dados bancários reais, solicitar saque, histórico completo, exportar extrato
+- Coleções: botão visualizar com modal
+- Afiliados: botão regras com conteúdo real inicial
+- Backend: endpoints de pedidos, clientes e carteira estendidos
+- SQL incluído: "ajustes finais.sql"
+
+Observação:
+- Não foi possível rodar build completo do frontend neste ambiente porque as dependências Node do projeto não estão instaladas aqui.
+- Os PHPs alterados foram validados com lint.

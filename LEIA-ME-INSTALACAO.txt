@@ -1,0 +1,24 @@
+Este projeto foi ajustado para evitar o erro de npm install causado por package-lock travado em registry interno.
+
+O que foi corrigido:
+- package-lock.json removido (ele apontava para um servidor interno inacessível)
+- .npmrc adicionado com o registry público oficial do npm
+- script "clean" do package.json ajustado para funcionar no Windows
+
+Como instalar no Windows:
+1. Abra o terminal na pasta do projeto
+2. Rode:
+   npm cache clean --force
+   npm install
+3. Para rodar em desenvolvimento:
+   npm run dev
+4. Para gerar build:
+   npm run build
+
+Se ainda falhar, rode estes comandos:
+   npm config set registry https://registry.npmjs.org/
+   npm config delete proxy
+   npm config delete https-proxy
+
+Se estiver dentro de pasta sincronizada pelo OneDrive e der conflito de arquivo, mova o projeto para uma pasta simples, por exemplo:
+C:\projetos\PAINEL_PRINCIPAL_FONTE_AFILIADO_V6_CORRIGIDO

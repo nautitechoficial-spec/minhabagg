@@ -1,0 +1,20 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  
+  # Redirecionar para HTTPS (opcional, descomente se tiver SSL)
+  # RewriteCond %{HTTPS} off
+  # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Ignorar pastas reais (API e Uploads) para que o PHP funcione normalmente
+  RewriteCond %{REQUEST_URI} ^/api-painel/.* [OR]
+  RewriteCond %{REQUEST_URI} ^/uploads/.*
+  RewriteRule ^ - [L]
+
+  # SPA Routing: Se não for um arquivo ou diretório real, manda pro index.html
+  # Isso permite que rotas como /dashboard funcionem ao atualizar a página
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>

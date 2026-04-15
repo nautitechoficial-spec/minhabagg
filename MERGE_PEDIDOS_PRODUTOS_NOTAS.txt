@@ -1,0 +1,13 @@
+Arquivos de UI de Pedidos e Produtos foram copiados do "projeto novo" para o "projeto atual" (componentes/modais/tabelas/drawers/ícones/estilos desses módulos).
+
+Ajustes aplicados:
+- Copiados componentes de pedidos -> src/components/aistudio/orders/*
+- Copiados componentes de produtos -> src/components/aistudio/products/*
+- Copiado ConfirmationModal atualizado
+- Corrigidos imports de tipos (aistudioTypes)
+- Corrigido import de ProductTable na página de produtos
+- Corrigidos imports default de OrdersPage/ProductsPage em src/App.tsx
+
+Observação:
+As páginas OrdersPage.tsx e ProductsPage.tsx do projeto atual já estavam ligadas à API PHP.
+Se quiser, posso fazer uma segunda etapa focada em deixar 100% idêntico ao layout do projeto novo (headers/filtros/paginação/ações) mantendo integração real com orders.php/products.php.
